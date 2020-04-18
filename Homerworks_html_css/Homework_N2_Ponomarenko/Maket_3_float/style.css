@@ -1,0 +1,438 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.father{
+    height: 900px;
+    /* border: 1px solid #000; */
+}
+.head{
+    height: 150px;
+    border: 1px solid darkkhaki;
+    background-color: darkkhaki;
+    /* padding-top: 15px; */
+}
+.head__inside{
+    height: 70%;
+    width: 70%;
+    border: 1px solid darkkhaki;
+    margin: 1% auto;
+    background-color: lemonchiffon;
+    /* ; */
+}
+.head__inside--text{
+    height: 50%;
+    width: 50%;
+    /* border: 1px solid #000; */
+    text-align: center;
+    margin: 2% auto;
+    background-color:white;
+    /* padding: 10px; */
+    
+}    
+.head__span_text{
+ font-size: 40px;
+
+}
+
+
+.menu_site{
+    height: 180px;
+    width: 100%;
+
+background-color: blueviolet;    
+    
+}
+.menu_site_1{
+    height: 180px;
+    width: 20%;
+    background-color: cadetblue;
+    /* margin: -2px; */
+    /* display: inline-block; */
+    text-align: center;
+    float: left;
+    
+}
+.menu_site_span_1{
+    font-size: 40px;
+}
+.menu_site_2{
+    height: 180px;
+    width: 20%;
+    background-color: deepskyblue;
+    /* margin: -2px; */
+    /* display: inline-block; */
+    text-align: center;
+    float: left;
+}
+.menu_site_span_2{
+    font-size: 40px;
+}
+.menu_site_3{
+    height: 180px;
+    width: 20%;
+    background-color: goldenrod;
+    /* margin: -2px; */
+    /* display: inline-block; */
+    text-align: center;
+    float: left;
+}
+.menu_site_span_3{
+    font-size: 40px;
+}
+.menu_site_4{
+    height: 180px;
+    width: 20%;
+    background-color: coral;
+    /* margin: -2px; */
+    /* display: inline-block; */
+    text-align: center;
+    float: left;
+}
+.menu_site_span_4{
+    font-size: 40px;
+}
+.menu_site_5{
+    height: 180px;
+    width: 20%;
+    background-color: darkviolet;
+    /* margin: -2px; */
+    /* display: inline-block; */
+    text-align: center;
+    float: left;
+}
+.menu_site_span_5{
+    font-size: 40px;
+}
+
+.body{
+    height: calc(900px - 150px - 180px - 100px);
+    /* border: 1px solid #000; */
+    width: 100%;
+    background-color: crimson;
+
+}
+.body_first_colum{
+    height: 100%;
+    width: 33.33%;
+    /* border: 1px solid #000; */
+    /* margin: -2px; */
+    background-color: forestgreen;
+    /* display: inline-block; */
+    float: left;
+}
+
+.body_first_colum--text{
+    width: 120px;
+    height: 50px;
+    background-color: grey;
+    margin: 30px auto;
+    padding-top: 15px;
+    text-align: center;
+
+}
+.body_first_colum--cells{
+    width: 100px;
+    height: 335px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: grey;
+}
+.body_first_colum--cells3{
+    width: 100%;
+    height: 100px;
+    background-color: maroon;
+    float: none;
+    text-align: center;
+    
+}
+.body_first_colum--cells4{
+    width: 50%;
+    height: 234px;
+    background-color: hotpink;
+    float: left;
+    text-align: center;
+    
+}
+.body_first_colum--cells5{
+    width: 50%;
+    height: 234px;
+    background-color: yellow;
+    float: left;
+    text-align: center;
+}
+
+
+.body_second_colum{
+    height: 100%;
+    width: 33.33%;
+    /* border: 1px solid #000; */
+    /* margin: -2px; */
+    background-color: rgb(66, 34, 139);
+    /* display: inline-block; */
+    float: left;
+
+
+}
+
+.body_second_colum--A{
+    width: 100%;
+    height: 100px;
+    background-color: teal;
+    text-align: center;
+    float: none;
+}
+.body_second_colum--B{
+    width: 127px;
+    height: calc(900px - 150px - 180px - 100px - 100px);
+    background-color:gray;
+    text-align: center;
+    float: left;
+    /* clear: both; */
+}
+.body_second_colum--B--B1{
+    width: 100%;
+    height: 30%;
+    text-align: center;
+    /* background-color: maroon; */
+    float: none;
+
+}
+.body_second_colum--B--B2{
+    width: 50%;
+    height: 70%;
+    background-color: maroon;
+    float: left;
+
+}
+.body_second_colum--B--Bfalse{
+    height: 30%;
+    float: none;
+}
+.body_second_colum--B--B3{
+    width: 50%;
+    height: 40%;
+    background-color: mediumturquoise;
+    float: left;
+}
+.body_second_colum--C{
+    width: 127px;
+    height: calc(900px - 150px - 180px - 100px - 100px);
+    background-color:rgb(134, 50, 50);
+    float: left;
+}
+
+.body_second_colum--C1{
+    width: 100%;
+    height: calc((900px - 150px - 180px - 100px - 100px)/4);
+    background-color: rgb(0, 119, 128);
+    float: none;
+    text-align: center;
+    
+}
+.body_second_colum--C2{
+    width: 100%;
+    height: calc((900px - 150px - 180px - 100px - 100px)/4);
+    background-color: rgb(117, 0, 128);
+    float: none;
+    text-align: center;
+    
+}
+.body_second_colum--C3{
+    width: 100%;
+    height: calc((900px - 150px - 180px - 100px - 100px)/4);
+    background-color: rgb(126, 128, 0);
+    float: none;
+    text-align: center;
+    
+}
+.body_second_colum--C4{
+    width: 50%;
+    height: calc((900px - 150px - 180px - 100px - 100px)/4);
+    background-color: rgb(203, 219, 203);
+    float: left;
+    text-align: center;
+    
+}
+.body_second_colum--C5{
+    width: 50%;
+    height: calc((900px - 150px - 180px - 100px - 100px)/4);
+    background-color: rgb(128, 83, 0);
+    float: left;
+    text-align: center;
+    
+}
+.body_second_colum--D{
+    width: 128px;
+    height: calc(900px - 150px - 180px - 100px - 100px);
+    background-color:rgb(134, 50, 50);
+    float: left;
+}
+
+.body_second_colum--D1{
+    width: 100%;
+    height: calc((900px - 150px - 180px - 100px - 100px)/4);
+    text-align: center;
+    background-color: steelblue;
+
+}
+.body_second_colum--D2{
+    width: 100%;
+    height: calc((900px - 150px - 180px - 100px - 100px)/4);
+    text-align: center;
+    background-color: rgb(5, 48, 83);
+
+}
+.body_second_colum--D3{
+    width: 100%;
+    height: calc((900px - 150px - 180px - 100px - 100px)/2);
+    text-align: center;
+    background-color: rgb(142, 180, 70);
+
+}
+.body_second_colum--D3--span{
+    /* display: block; */
+    float: none;
+
+}
+
+.body_second_colum--D3--img{
+    width: 50px;
+    height: 75px;
+    /* background-image: url(C:\Users\Администратор\Desktop\Kursy\L2\homework_N2.2_Ponomarenko\Maket_3\gitar.jfif); */
+    background-size: cover;
+    background-position: center;
+    background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQbp8nN_3IfNOwCR_m3D-Yt20-bs2xOsHfdrGcOSTtrJGmKK_FS&usqp=CAU);
+    border: 1px solid #000;
+  
+    margin: 30px auto;
+}
+
+
+
+
+
+
+
+
+
+
+.body_third_colum{
+    height: 100%;
+    width: 33.33%;
+    /* border: 1px solid #000; */
+    /* margin: -2px; */
+    background-color: rgb(139, 34, 139);
+    /* display: inline-block; */
+    float: left;
+}
+.body_third_colum-I{
+    width: 127px;
+    height: 60px;
+    text-align: center;
+    float: left;
+    background-color: rgb(13, 0, 128);
+}
+.body_third_colum-II{
+    width: 127px;
+    height: 60px;
+    text-align: center;
+    float: left;
+    background-color: rgb(107, 0, 128);
+}
+.body_third_colum-III{
+    width: 128px;
+    height: 60px;
+    text-align: center;
+    float: left;
+    background-color: rgb(126, 128, 0);
+}
+.body_third_colum-IV{
+    width: 383px;
+    height: 150px;
+    background-color: thistle;
+    float: none;
+    clear: both;
+    text-align: center;
+}
+.body_third_colum-IV-1{
+    width: 383px;
+    height: 100px;
+    background-color: rgb(179, 245, 207);
+    padding-top: 30px;
+    float: none;
+    /* clear: both; */
+}
+.body_third_colum-IV-1-1{
+    width: 50%;
+    height: 50px;
+    background-color: red;
+    margin:  auto;
+    /* clear: both; */
+}
+.body_third_colum-IV-1-1-1{
+    width: 30px;
+    height: 30px;
+    float: none;
+}
+.body_third_colum-IV-1-1-2{
+    width: 30px;
+    height: 20px;
+    margin: auto;
+    background-color: black;
+
+}
+/* .body_third_colum-IV-2{
+
+} */
+
+.body_third_colum-V{
+    width: calc(383px - 283px);
+    height: calc(900px - 150px - 180px - 100px - 60px - 150px);
+    background-color: coral;
+    text-align: center;
+    float: left;
+}
+
+.body_third_colum-VI{
+    width: calc(383px - 101px);
+    height: 80px;
+    background-color: darkgray;
+    text-align: center;
+    float: left;
+    /* clear: both; */
+
+}
+.body_third_colum-VII{
+    width: 141px;
+    height: 80px;
+    background-color: darkorange;
+    text-align: center;
+    float: left;
+    /* clear: both; */
+}
+.body_third_colum-VIII{
+    width: 141px;
+    height: 80px;
+    background-color: rgb(0, 255, 242);
+    text-align: center;
+    float: left;
+    /* clear: both; */
+}
+.body_third_colum-IX{
+    width: calc(383px - 101px);
+    height: 100px;
+    background-color: darkgray;
+    text-align: center;
+    float: left;
+    /* clear: both; */
+}
+.basement{
+    height: 100px;
+    background-color: dimgray;
+    text-align: center;
+}
+    

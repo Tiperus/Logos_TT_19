@@ -1,0 +1,12 @@
+#superStyle{
+   
+    text-align: right;
+    font-size: 2em;
+    background-color: mediumturquoise;
+    color:  darkred;
+    padding: 10px;
+    outline:  olive dotted 3px;
+    outline-offset: -5px;
+    
+
+}

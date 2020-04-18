@@ -1,0 +1,28 @@
+.box1{
+    height: 200px;
+    width: 400px;
+    margin: 20px auto;
+    border: 3px dashed red ;
+    background-color: rgb(79, 214, 203);
+}
+.box2{
+    height: 200px;
+    width: 400px;
+    margin: 20px auto;
+    border: 3px dotted red;
+    background-color: yellow;
+}
+.box3{
+    height: 200px;
+    width: 400px;
+    margin: 20px auto;
+    border: 30px inset blue;
+    background-color: turquoise;
+}
+.box4{
+    height: 200px;
+    width: 400px;
+    margin: 20px auto;
+    border-left: 20px solid black;
+    background-color: turquoise;
+}

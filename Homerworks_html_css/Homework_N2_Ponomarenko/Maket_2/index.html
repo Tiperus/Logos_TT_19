@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ponomarenko_N2_homework</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <style>
+         @font-face {font-family: 'Roboto', sans-serif; src: url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" );}
+        
+        .style{
+            font-family: Roboto;
+            font-size: 3em; color: crimson;
+            background-color: lawngreen;
+            text-align: center;
+            border: 5px solid coral;
+            border-top-left-radius: 20px;
+        }          
+        .blymannia{
+            animation: blymannia 2s infinite;} 
+   
+            @keyframes blymannia {
+            from { opacity: 1; }
+            to { opacity: 0;}
+            }
+            }
+
+            /* зробив простіше (мало мав часу) */
+           
+    </style>
+    
+    
+
+
+</head>
+<body>
+    <p style="font-size: small; color: midnightblue; background-color: aquamarine; border: 4px solid coral; text-align: center; ">Текст відредаговано вбудованим стилем</p> 
+    <p class="style blymannia">Текст відредаговаго глобальним стилем через "клас"</p>
+    <p id="superStyle">Текст відредаговано з допомогою зовнішнього файлу через "ІД"</p>
+</body>
+</html>

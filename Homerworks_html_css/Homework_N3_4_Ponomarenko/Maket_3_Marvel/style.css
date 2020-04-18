@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url(\font\Roboto-Black.ttf);
+
+.father{
+    width: 100%;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+}
+.head__main{
+    width: 1180px;
+    height: 50px;
+    background-color: rgb(224, 223, 223);
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-top: 0.6%;
+    text-align: center;
+}
+.head__main__text--span{
+    /* margin: 0 auto; */
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: 750;
+    color: rgb(194, 31, 31);
+}
+.content{
+    width: 1180px;
+    height: 550px;
+    /* background-color: rgb(166, 231, 35); */
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: row;
+}
+.picture{
+    width: 50%;
+    height: 500px;
+    margin: 50px;
+    /* background-color: sandybrown; */
+    padding-left: 30px;
+    flex-direction: column;
+}
+
+.picture__big{
+    width: 500px;
+    height: 281px;
+    background-image: url(Marvel_Studios_logo.jpg);
+    background-size: contain;
+    outline: double 5px rgb(202, 201, 197);
+  
+    
+}
+.piture__smoll{
+    /* background-color: turquoise; */
+    width: 500px;
+    height: 65px;
+    margin-top: 30px;
+    /* flex-direction: row; */
+    /* justify-content: space-between; */
+    
+    
+}
+.picture__smoll__1{
+    width: 104px;
+    height: 60px;
+    margin-right: 28px;
+    background-image: url(Marvel_Studios_logo.jpg);
+    background-size: contain;
+    outline: double 4px rgb(202, 201, 197);
+    /* background-color: thistle; */
+    float: left;
+}
+.picture__smoll__2{
+    width: 104px;
+    height: 60px;
+    margin-right: 28px;
+    background-image: url(Marvel_Studios_logo.jpg);
+    background-size: contain;
+    outline: double 4px rgb(202, 201, 197);
+    /* background-color: thistle; */
+    float: left;
+}
+
+.picture__smoll__3{
+    width: 104px;
+    height: 60px;
+    margin-right: 28px;
+    background-image: url(Marvel_Studios_logo.jpg);
+    background-size: contain;
+    outline: double 4px rgb(202, 201, 197);
+    /* background-color: thistle; */
+    float: left;
+}
+
+.picture__smoll__4{
+    width: 104px;
+    height: 60px;
+    background-image: url(Marvel_Studios_logo.jpg);
+    background-size: contain;
+    outline: double 4px rgb(202, 201, 197);
+    /* background-color: thistle; */
+    float: left;
+
+}
+
+
+
+
+.text{
+    width: 35%;
+    height: 350px;
+    margin: 50px;
+    padding-right: 50px;
+    /* background-color: sandybrown; */
+}
+
+.header__text{
+    /* font-size: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: slategrey; */
+    padding: 5px;
+    border-bottom: tomato solid 3px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header__text--span{
+
+    font-size: 28px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: slategrey;
+}
+
+.text__main{
+    padding-top: 10px;
+    text-align: justify;
+}
+
+.text__main--span{
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: slategrey;
+    
+
+}
+    
