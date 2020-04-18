@@ -1,0 +1,508 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: "bahij-sultannahia";
+    src: url(fonts/bahij-sultannahia.ttf);
+    }
+
+
+body{
+    width: 100%;
+    height: 900px;
+    background-color: rgb(224, 224, 224);
+    /* padding-left: 50px; */
+}
+header{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(224, 224, 224);
+    padding: 0.9%;
+    position: fixed;
+    z-index: 99;
+}    
+
+
+.header__nav{
+    width: 350px;
+
+    margin: auto;
+    text-align: center;
+    /* background-color: cyan; */
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+.header_a {
+    text-decoration: none;
+    font-family: "bahij-sultannahia";
+    font-size: 30px;
+    font-weight: 500;
+    color:black;
+}
+.header_a_hover{
+    color: black;
+}
+
+.header_a_hover:hover{
+    color: blue;
+   
+}
+
+
+
+main{
+  
+    position: absolute;
+   
+    top: 52px;
+    left: 15px;
+    right: 15px;
+    bottom: 20px;
+    border-radius: 20px;
+   
+    background-color: rgb(175, 175, 175);
+
+}
+
+.content{
+    position: absolute;
+   
+    top: 22px;
+    left: 140px;
+    right: 15px;
+    bottom: 22px;
+   
+    display: flex;
+    flex-wrap: wrap;
+    
+   
+}
+
+
+
+
+.left{
+    width: 46%;
+    height: 100%;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+}
+
+.content_left_description{
+    width: 98%;
+    height: 23%;
+    background-color: white;
+    border-radius: 20px;
+    
+    display: flex;
+    /* padding-top: 50px; */
+    padding-left: 20px;
+    /* padding-right: 15px; */
+    justify-content: flex-start;
+    align-items: center;
+}
+.logo_andry{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url(https://discuss.iconscout.com/letter_avatar/akido/90/5_f2c2786448315fcd208f16ee9fd8fb72.png);
+    /* background-color: lawngreen; */
+    background-size: contain;
+    background-position: center;
+}
+.logo_andy_text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 4%;
+}
+
+.name_andy{
+    font-size: 30px;
+    font-family: "bahij-sultannahia";
+    
+}
+.name_andy_coment{
+    font-size: 20px;
+    font-family: "bahij-sultannahia";
+    color: gray;
+}
+
+.content__left__team{
+    width: 98%;
+    height: 75%;
+    background-color:white;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    display: flex;
+}
+.picture__team{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-left: 10px;
+    padding-top: 8px;
+}
+
+
+.picture_team_picture{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(87, 87, 177);
+    
+    /* color: white; */
+}
+
+.content__left__team--head{
+    width: 75%;
+    height: 100%;
+    /* background-color: tomato; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 4%;
+    position: relative;
+}
+
+.content__left__team--head_span{
+    font-size: 30px;
+    font-family: "bahij-sultannahia";
+}
+
+.content__left__team--coment_span{
+    font-size: 16px;
+    font-family: "bahij-sultannahia";
+    color: gray;
+}
+/* .content__left__team--text{
+    width: 75%;
+    height: 100%;
+    background-color: tomato; */
+/* } */
+/* .content__left__team--head{
+    
+} */
+.first_form{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-left: 10px;
+    padding-top: 18px;
+}
+.password{
+ 
+    width: 100%;
+    height: 100%;
+  /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+   
+    position: relative;
+    margin-bottom: 50px;
+
+}
+
+
+.pas{
+    width: 90%;
+    height: 30px;
+    border-radius: 7px;
+    border-color: rgb(221, 219, 219);
+    margin: 0 auto;
+    font-family: "bahij-sultannahia";
+    font-size: 15px;
+    box-shadow: 5px 5px 5px rgb(175, 175, 175);
+
+}
+
+.lpas{
+    height: 60px;
+    margin-left: 5%;
+    font-family: "bahij-sultannahia";
+    font-size: 17px;
+    color: rgb(41, 40, 40);
+}
+
+ .lpas3{
+    margin-bottom: 70px;
+} 
+
+button{
+    
+    width: 80px;
+    height: 40px;
+    /* margin-left: 75%; */
+    background-color:rgb(87, 87, 177);
+    border: none;
+    border-radius: 10px;
+    font-family: "bahij-sultannahia";
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+
+}
+
+
+
+
+.right{
+    width: 53%;
+    height: 100%;
+    background-color: white;
+    border-radius: 20px;
+    padding: 15px;
+}
+.right_heder{
+    height: 15%;
+    /* background-color: greenyellow; */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.picture__data{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-size: contain;
+    background-position: center;
+    background-color: indianred;
+    padding: 5px;
+    /* background-image: url(images/data.jpg);
+    background-size: contain;
+    background-color: transparent; */
+}
+
+.right_header_text{
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+}
+
+.right_header_text--span1{
+    font-size: 30px;
+    font-family: "bahij-sultannahia";
+    
+}
+.right_header_text--span2{
+    font-size: 20px;
+    font-family: "bahij-sultannahia";
+    color: gray;
+}
+.university{
+    width: 100%;
+    height: 85%;
+  /* background-color: hotpink; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-bottom: 5px;
+    position: relative;
+}
+.text{
+    height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    padding-top: 30px;
+    padding-left: 20px;
+}
+.lpas2{
+    /* margin-left: 5%; */
+    font-family: "bahij-sultannahia";
+    font-size: 17px;
+    color: rgb(41, 40, 40);
+    
+}
+.pas2{
+    /* width: 90%; */
+    height: 30px;
+    border-radius: 7px;
+    border-color: rgb(221, 219, 219);
+    /* margin: 0 auto; */
+    font-family: "bahij-sultannahia";
+    font-size: 15px;
+    box-shadow: 5px 5px 5px rgb(175, 175, 175);
+    text-align: start;
+}
+
+.pas4{
+    width: 90%;
+    height: 30px;
+}
+.lpas5{
+    margin-top: 15px;
+}
+.pas5{
+    width: 90%;
+    height: 60px;
+    
+    
+    
+    
+}
+.box_for_form1{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+}
+.box_for_form{
+    width: 100%;
+    height: 45%;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row nowrap;
+    
+}
+.box_for_form2{
+    width: 49%;
+    /* display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start; */
+    /* background-color: yellowgreen; */
+
+}
+
+.box_for_form3{
+    width: 49%;
+    /* display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    position: relative; */
+    /* background-color: yellow; */
+}
+.pas5{
+    padding-bottom: 5%;
+}
+
+.pas61{
+    width: 90%;
+    height: 30px;
+    border-radius: 7px;
+    border-color: rgb(221, 219, 219);
+    /* margin: 0 auto; */
+    font-family: "bahij-sultannahia";
+    font-size: 15px;
+    box-shadow: 5px 5px 5px rgb(175, 175, 175);
+    /* text-align: start; */
+}
+.lpas61{
+    width: 45%;
+    height: 30px;
+    font-family: "bahij-sultannahia";
+    font-size: 17px;
+    color: rgb(41, 40, 40);
+    margin-top: 20px;
+}
+
+.buttom2{
+    width: 80px;
+    height: 40px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    /* margin-top: 20px;
+    margin-left: 59%; */
+    
+    background-color: rgb(87, 87, 177);
+    border: none;
+    border-radius: 10px;
+    font-family: "bahij-sultannahia";
+    font-size: 20px;
+    color: white;
+
+}
+
+.aside_position{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    position: fixed;
+    /* text-outline: 0; */
+    left: 3%;
+
+}
+
+aside{
+    /* position: fixed;
+    top: 25vh;
+    left: 35px; */
+    width: 90px;
+    height: 350px;
+    border-radius: 15px;
+    background-color: white;
+    padding-top: 10px;
+    padding-left: 2%;
+    /* padding-left: 10px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+svg{
+    fill: rgb(236, 230, 230);
+}
+
+.aside_a{
+    width: 40px;
+    height: 40px;
+    /* background-color: darkgreen; */
+    border-radius: 5px;
+    overflow: hidden;
+    transition: .3s;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    font-family: "bahij-sultannahia";
+    letter-spacing: 1px;
+    font-size: 20px;
+    padding-top: 8px;
+}
+.uil-desktop{
+    background-color: rgb(87, 87, 177);
+    padding-top: 3px;
+    /* margin-top: 3px; */
+    border-radius: 4px;
+}
+
+.aside_a:hover{
+    background-color: rgb(87, 87, 177);
+    width: 115px;
+    text-decoration: none;
+    color: white;
+    
+    
+}
+
+.uil:hover{
+    color: honeydew;
+}
+
+
+
+
+

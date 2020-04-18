@@ -1,0 +1,334 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: "bahij-sultannahia";
+    src: url(fonts/bahij-sultannahia.ttf);
+    }
+
+
+body{
+    
+    height: 900px;
+    background-color: rgb(224, 224, 224);
+    
+}
+header{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(224, 224, 224);
+    padding: 0.9%;
+    position: fixed;
+    z-index: 99;
+}    
+
+
+.header__nav{
+    width: 350px;
+
+    margin: auto;
+    text-align: center;
+    /* background-color: cyan; */
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+.header_a {
+    text-decoration: none;
+    font-family: "bahij-sultannahia";
+    font-size: 30px;
+    font-weight: 500;
+    color:black;
+}
+.header_a1_hover{
+    color: blue;
+}
+
+.header_a2_hover:hover{
+    color: blue;
+   
+}
+.header_a1_hover a{
+    color: black;
+}
+.header_a3_hover:hover{
+    color: blue;
+   
+}
+
+
+main{
+    
+    position: absolute;
+   
+    top: 52px;
+    left: 15px;
+    right: 15px;
+    bottom: 20px;
+    border-radius: 20px;
+  
+    background-color: rgb(175, 175, 175);
+
+}
+
+.content{
+    position: absolute;
+   
+    top: 22px;
+    left: 140px;
+    right: 15px;
+    bottom: 22px;
+  
+    display: flex;
+    flex-wrap: wrap;
+    
+
+}
+
+
+
+.title{
+   width: 100%;
+   height: 25%;
+  
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: nowrap;
+
+}
+.div_html_css{
+    width: 49%;
+    height: 80%;
+    background-color: white;
+    border-radius: 20px;
+    
+    padding-left: 5%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+
+h1{
+    font-family: "bahij-sultannahia";
+    font-size: 30px;
+    font-weight: 500;
+}    
+.label1{
+    font-family: "bahij-sultannahia";
+    font-size: 18px;
+    font-weight: 300;
+    color: darkgray;
+}
+.logos{
+    width: 49%;
+    height: 80%;
+    background-color: white;
+    border-radius: 20px;
+    /* padding-top: 20px; */
+    padding-left: 5%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    
+}
+
+.label2{
+    font-family: "bahij-sultannahia";
+    font-size: 18px;
+    font-weight: 300;
+    color: darkgray;
+}
+h2{
+    font-family: "bahij-sultannahia";
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.left{
+    width: 65%;
+    height: 75%;
+    /* background-color: cadetblue; */
+    display: flex;
+    flex-direction: column;
+    /* align-content: space-between; */
+    justify-content: space-between;
+    /* position: relative; */
+}
+
+.content_left_description{
+    width: 98%;
+    height: 48%;
+    background-color: white;
+    border-radius: 20px;
+    /* position: relative; */
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    /* padding-top: 30px; */
+    padding-left: 7%;
+    padding-right: 15px;
+}
+
+article{
+    font-family: "bahij-sultannahia";
+    /* position: relative; */
+}
+
+.content_left_description--header{
+    font-size: 30px;
+}
+.content_left_description--text{
+    color: darkgray;
+    font-size: 18px;
+    padding-left: 10px;
+
+
+}
+.content__left__team{
+    width: 98%;
+    height: 48%;
+    background-color:white;
+    border-radius: 20px;
+    padding: 30px 10px 10px 60px;
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+}
+.picture__team{
+    width: 125px;
+    height: 141px;
+    background-image: url(images/team.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    margin-right: 10px;
+    /* display: flex;
+    flex-direction: row; */
+}
+
+.content__left__team--text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+    /* margin-top: 7%; */
+}
+.head__team{
+    font-size: 30px;
+    font-family: "bahij-sultannahia";
+}
+.team__text{
+    font-family: "bahij-sultannahia";
+    font-size: 18px;
+    color: darkgray;
+    padding-left: 10px;
+}
+.right{
+    width: 35%;
+    height: 75%;
+    background-color: white;
+    border-radius: 20px;
+    padding: 15px;
+    overflow: hidden;
+}
+.picture__data{
+    width: 125px;
+    height: 120px;
+    background-image: url(images/data.jpg);
+    background-size: contain;
+    background-color: transparent;
+
+}
+.right_article{
+    padding-bottom: 1%;
+
+   
+}
+
+.right__data--header{
+    font-size: 30px;
+    font-family: "bahij-sultannahia";
+}
+
+.right__data--text{
+    font-family: "bahij-sultannahia";
+    font-size: 18px;
+    color: darkgray;
+    text-align: justify;
+    padding: 0px 10px 10px 10px ;
+    
+}
+.aside_position{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    position: fixed;
+    /* text-outline: 0; */
+    left: 3%;
+
+}
+
+aside{
+    /* position: fixed;
+    top: 25vh;
+    left: 35px; */
+    width: 90px;
+    height: 350px;
+    border-radius: 15px;
+    background-color: white;
+    padding-top: 10px;
+    padding-left: 2%;
+    /* padding-left: 10px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.aside_a{
+    width: 40px;
+    height: 40px;
+    /* background-color: darkgreen; */
+    border-radius: 5px;
+    overflow: hidden;
+    transition: .3s;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    font-family: "bahij-sultannahia";
+    letter-spacing: 1px;
+    font-size: 20px;
+    padding-top: 8px;
+}
+
+.aside_a:hover{
+    background-color: rgb(87, 87, 177);
+    width: 115px;
+    text-decoration: none;
+    color: white;
+    
+    
+}
+
+.uil:hover{
+    color: honeydew;
+}
+
+
+
+
+
+
+
