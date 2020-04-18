@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: "bahij-sultannahia";
+    src: url(fonts/bahij-sultannahia.ttf);
+    }
+
+
+body{
+    width: 100%;
+    height: 900px;
+    background-color: rgb(224, 224, 224);
+   
+}
+header{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(224, 224, 224);
+    padding: 0.9%;
+    position: fixed;
+    z-index: 99;
+}    
+
+
+.header__nav{
+    width: 350px;
+
+    margin: auto;
+    text-align: center;
+   
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+.header_a {
+    text-decoration: none;
+    font-family: "bahij-sultannahia";
+    font-size: 30px;
+    font-weight: 500;
+    color:black;
+}
+.header_a1_hover:hover{
+    color: blue;
+}
+
+
+
+.header_a2_hover:hover{
+    color: blue;
+   
+}
+
+.header_a3_hover{
+    color: blue;
+   
+}
+
+
+main{
+   
+    position: absolute;
+   
+    top: 52px;
+    left: 15px;
+    right: 15px;
+    bottom: 20px;
+    border-radius: 20px;
+ 
+    background-color: rgb(175, 175, 175);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+table{
+    /* border: 1px solid #000; */
+    width: 80%;
+    height: 350px;
+    font-family: "bahij-sultannahia";
+    font-size: 20px;
+    /* font-weight: 200; */
+    text-align: center;
+    text-justify: auto;
+    color: rgba(0, 0, 0, 0.555);
+}
+thead{
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+td{
+    /* border: 1px solid #000; */
+}
+.row:hover{
+    background-color: rgb(157, 238, 238);
+}
+.uil:hover{
+    color: cornsilk;
+}
