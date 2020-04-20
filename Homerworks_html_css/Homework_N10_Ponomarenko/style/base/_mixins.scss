@@ -1,0 +1,26 @@
+@mixin flexCenter(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@mixin flex_j_a($justify,$aling){
+    display: flex;
+    justify-content: $justify;
+    align-items: $aling;
+}
+
+@mixin flex_d_j_a($direct,$justify,$aling){
+    display: flex;
+    flex-direction: $direct;
+    justify-content: $justify;
+    align-items: $aling;
+}
+@mixin flex_d_w_j_a($direct,$wrap,$justify,$aling){
+    display: flex;
+    flex-direction: $direct;
+    flex-wrap: $wrap;
+    justify-content: $justify;
+    align-items: $aling;
+}
