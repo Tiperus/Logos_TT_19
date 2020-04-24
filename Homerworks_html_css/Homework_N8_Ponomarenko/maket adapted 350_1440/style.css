@@ -2306,7 +2306,7 @@ align-items: center;
     
     
     .main_p3__buttom{
-        width: 100vh;
+        width: 100vw;
         height: 27%;
         /* background-color: rgb(2, 0, 128); */
         margin-top: 6%;
@@ -2375,7 +2375,7 @@ align-items: center;
     }
     
     .main_p4__picture_right__maintext__buttom--buttom{
-        width: 40vh;
+        width: 40vw;
         height: 42px;
         background-color: black;
         border: white 1px solid;
@@ -2576,10 +2576,11 @@ align-items: center;
             height: 67%;
             background-size: cover;
             background-position: center;
+            background-repeat: no-repeat;
         }
         
     .main_p6__buttom{
-        width: 100vh;
+        width: 100vw;
         height: 30%;
         /* background-color: rgb(2, 0, 128); */
         display: flex;
@@ -2615,22 +2616,3 @@ align-items: center;
     }
 
 }
-/* @media screen and (min-width: 768px) and (max-width: 1024px){
-    .box{
-        width: 90%;
-        height: 400px;
-        background-color: yellow;
-        font-size: 20px;
-    }
-} */
-
-/* @media screen and (min-width: 320px) and (max-width: 480px){
-    .box{
-        background-color: black;
-    }
-}
-@media screen and (min-width: 481px) and (max-width: 720px){
-    .box{
-        background-color: rgb(141, 80, 80);
-    }
-} */
