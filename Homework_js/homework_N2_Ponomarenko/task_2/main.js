@@ -6,18 +6,19 @@ let singpassword;
         
 if (login == null) {
         alert('Вхід скасовано!')
-        }
+}
     else if (name == login) {
         singpassword = prompt("Write your password")
-        }
+        
 
         if (singpassword == null) {
-            alert('Ви ввели неправильні дані!');
+            alert('Вхід скасовано!');
         }
             else if  (singpassword == password) {
                 alert("Ласкаво просимо!");
             }
-            
+            else {alert("Ви ввели неправильний пароль!");}
+    }           
 else {
             alert('Я Вас не знаю')
         }
