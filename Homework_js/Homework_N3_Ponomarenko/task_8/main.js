@@ -1,17 +1,15 @@
-let number = +prompt('number')
-let step = +prompt('step')
+let number = +prompt('number');
+let step = +prompt('step');
+let result = 1, variable;
 
-let result = 1;
-
-if(step>0){
-   for(let i = 1; i <= step; i++){
-        result = result * number
-        console.log(result)}
-   }
-    else if(step<0){
-    step=-step
-    }
-else{console.log(1)}
-
-
+if(step>0) variable=step
     
+else if(step<0)variable=-step
+
+for(let i = 1; i <= variable; i++){
+     result = result * number
+}
+if(step>0)console.log(result)
+else {
+     result=1/result
+     console.log(result)} 
