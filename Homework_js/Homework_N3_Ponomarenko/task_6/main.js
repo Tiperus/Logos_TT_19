@@ -1,7 +1,4 @@
-for(let i = 2; i<= 10000; i++){
-        if(i % 2 == 0){
-            continue
-        }
-        console.log(i)
-        document.write(i+" ")
-    }
+for(let i = 2; i < 1000; i = i * 2 - 1){
+    document.write(i);
+}
+    
