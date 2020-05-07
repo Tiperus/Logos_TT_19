@@ -1,10 +1,10 @@
 let MyMath = {};
 MyMath.a = 5;
 MyMath.b = 2;
-MyMath.sum = function(){ let sum=this.a+this.b; return sum};
-MyMath.multiplication=function(){let multiplication=this.a*this.b; return multiplication};
-MyMath.division=function(){let division=this.a/this.b; return division};
-MyMath.subtraction=function(){let subtraction=this.a-this.b; return subtraction};
+MyMath.sum(){ let sum=this.a+this.b; return sum};
+MyMath.multiplication(){let multiplication=this.a*this.b; return multiplication};
+MyMath.division(){let division=this.a/this.b; return division};
+MyMath.subtraction(){let subtraction=this.a-this.b; return subtraction};
 
 
 console.log(MyMath);
