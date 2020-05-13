@@ -1,0 +1,60 @@
+@mixin header() {
+    width: 97%;
+    margin: 0% auto 3% auto;
+    text-align: center;
+    font-family: My_1;
+    font-size: 26px;
+    color: $darkText;
+    display: flex;
+    flex-wrap: wrap;
+}
+@mixin page () {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+@mixin button () {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin imgbig ($url,$center) {
+    width: 66%;
+    height: 100%;
+    font-family: My_1;
+    font-size: 22px;
+    color: white;
+    background-image: $url;
+    background-size: cover;
+    background-position: $center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin imgsmall($url, $position, $mar_right, $mar_left){
+    width: 32%;
+    height: 100%;
+    font-family: My_1;
+    font-size: 22px;
+    color: white;
+    background-image: $url;
+    background-size: cover;
+    background-position: $position;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: $mar_right;
+    margin-left: $mar_left;
+}
+
+@mixin justify {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flexDisplay($justify,$align){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
