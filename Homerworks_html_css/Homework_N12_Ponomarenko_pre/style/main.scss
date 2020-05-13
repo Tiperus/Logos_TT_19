@@ -19,7 +19,7 @@
 
 .p1_main {
     @include flexDisplay(center, flex-start);
-    height: 100vh;
+    // height: 100vh;
     background-image: url(../assests/image/top-min.jpg);
     background-position: right;
     background-size: cover;
@@ -30,11 +30,11 @@
     }
     .p1_main_content{
         @include flexDisplay(flex-start, center);
-        height: 98vh;
+        height: 100vh;
         width: 80%;
         flex-flow: column nowrap;
     @media screen and (max-width: 767px){
-        height: 100vh;
+        height: 97vh;
         width: 80%;
         }
         .p1_main_top{
@@ -142,19 +142,19 @@
   }
 .page{
     @include flexDisplay(space-around, center);
-    width: 97vw;
+    
     @media screen and (max-width: 768px){
         width: fit-content;
         height: fit-content;
             }
     .p2_main_box {
         @include flexDisplay(flex-end, center);
-        width: 70vw;
+        width: 70%;
         height: 461px;
         flex-direction: column;
         margin-top: 10%;
         @media screen and (max-width: 768px){
-            width: 100%;
+            width: 97%;
             height: fit-content;
             flex-wrap: wrap;
             justify-content: center;
@@ -174,7 +174,7 @@
         }
         
         .p2_main_box_image_box{
-            // width: 100%;
+            width: 100%;
             height: 404px;
             display: flex;
             flex-flow: row;
@@ -296,12 +296,12 @@
     align-items: center;
     margin-top: 10%;
     @media screen and (max-width: 768px){
-        width: 100vw;
+        width: 97%;
     }
     
     .p3_main_box_head{
         @extend .content_header;
-        // width: 100%;
+        width: 97%;
         margin: 0 auto 3% auto;
         text-align: center;
         font-family: My_1;
@@ -312,7 +312,7 @@
         }       
     }
     .p3_main_content_box{
-        width: 100%;
+        width: 97%;
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
@@ -473,7 +473,7 @@
         align-items: center;
         margin-top: 7%;
         @media screen and (max-width: 768px){
-            width: 100%;
+            width: 97vw;
             height: fit-content;
                 }
 
@@ -486,7 +486,7 @@
             }
         }
         .p4_main_content_box{
-            width: 100%;
+            width: 97%;
             height: 970px;
             background-color: white;
             display: flex;
@@ -494,7 +494,7 @@
             justify-content: flex-end;
             align-items: center;
             @media screen and (max-width: 768px){
-                width: fit-content;
+                width: 97%;
                 height: fit-content;
                     }
 
@@ -505,7 +505,7 @@
                 display: flex;
                 flex-flow: row;
                 @media screen and (max-width: 768px){
-                    // width: 100wv;
+                    width: 100%;
                     min-height: fit-content;
                     flex-flow: column;
                     margin-top: 0;
@@ -536,7 +536,7 @@
                     margin-left: 2%;
                     margin-right: 2%;
                     @media screen and (max-width: 768px){
-                        width: 100vw;
+                        width: 100%;
                         height: fit-content;
                         margin-left: 0;
                         margin-right: 0;
@@ -547,7 +547,7 @@
                     @extend .p4_main_content_line1_im1;
                     background-image: url(../assests/image/ato-min.jpg);
                     @media screen and (max-width: 768px){
-                        width: 100vw;
+                        width: 100%;
                         height: fit-content;
                         // flex-flow: column;
                             }
@@ -557,7 +557,7 @@
             .p4_main_content_line2{
                 @extend .p4_main_content_line1;
                 @media screen and (max-width: 768px){
-                    width: 100vw;
+                    width: 100%;
                     min-height: fit-content;
                     flex-flow: column;
                     margin-top: 0;
@@ -566,7 +566,7 @@
                 .p4_main_content_line2_im1{
                    @include imgsmall(url(../assests/image/game2-min.jpg), right, 2%, 0);
                    @media screen and (max-width: 768px){
-                    width: 100vw;
+                    width: 100%;
                     min-height: 40vh;
                     margin-bottom: 2%;
                     margin-left: 0;
@@ -603,6 +603,7 @@
                         margin-left: 0;
                         margin-right: 0;
                         background-image: url(../assests/image/alpy-min.jpg);
+
                         
                        }
                     
@@ -635,6 +636,7 @@
     margin-top: 5%;
     // background-color: yellow;
     @media screen and (max-width: 768px){
+        width: 97%;
         justify-content: center;
         align-items: center;
 
@@ -649,7 +651,7 @@
         align-items: center;
         margin-bottom: 2%;
         @media screen and (max-width: 768px){
-            width: 100%;
+            width: 97%;
             height: fit-content;
         }
         .p4_main_box_head{
@@ -738,7 +740,7 @@
             flex-direction: row;
             
             @media screen and (max-width: 768px){
-                width: 100vw;
+                width: 100%;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;

@@ -7,6 +7,8 @@
     color: $darkText;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 @mixin page () {
     display: flex;
