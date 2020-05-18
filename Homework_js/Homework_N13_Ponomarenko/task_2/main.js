@@ -14,11 +14,34 @@ for(let i=0; i<keyboard.length; i++){
     if(insertLineBreak){
         keysBox.appendChild(document.createElement('br'));
     }
-    else{ keysBox.appendChild(key)}
-}
+    else{ keysBox.appendChild(key);
+    }
+    // key.addEventListener('click',function(event){
+    //     console.log(event);
+    // });
+    key.addEventListener('keydown',function(){
+        key.classList.toggle('keyboard__key--dark');
+        // console.log(event);
+    });
+    key.addEventListener('keyup',function(){
+        key.classList.toggle('keyboard__key--dark');
+        // console.log(event);
+    });
+    
+    
+};
 
 board.appendChild(keysBox);
 document.body.appendChild(board);
+
+console.log(document.querySelector('button'));
+let but = sel => document.querySelector(sel);
+console.log(but('button'));
+
+// but('button').addEventListener('click',function(event){
+//     console.log(event);
+// });
+
 
 
 
