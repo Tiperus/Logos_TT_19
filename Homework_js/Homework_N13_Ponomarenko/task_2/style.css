@@ -18,7 +18,7 @@
 }
 .keyboard__keys{
     text-align: center;
-    width: 80%;
+    width: 90%;
     min-height: 90px;
     background-color: beige;
     user-select:none;

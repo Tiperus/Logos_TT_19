@@ -3,22 +3,22 @@ let board = document.createElement('div');
 board.classList.add('keyboard');
 let keysBox = document.createElement('div');
 keysBox.classList.add('keyboard__keys');
-let keyboard=[9, 113, 119, 101, 114, 116, 121, 117, 105, 111, 112, 91, 93, 92, 97, 20,115, 100, 102, 103, 104, 106, 107, 108, 59, 39, 13, 16, 122, 120, 99, 118, 98, 110, 109, 44, 46, 47, 32];
+let keyboard=[9, 113, 119, 101, 114, 116, 121, 117, 105, 111, 112, 91, 93, 92, , 20, 97, 115, 100, 102, 103, 104, 106, 107, 108, 59, 39, 13, , 16, 122, 120, 99, 118, 98, 110, 109, 44, 46, 47, ,32];
 let i;
 
 for(i=0; i<keyboard.length; i++){
     let key = document.createElement('button');
-    key.classList.add('keyboard__key','k_'+keyboard[i], keyboard[i]);
+    key.classList.add('k_'+keyboard[i],'keyboard__key', keyboard[i]);
     key.innerHTML=String.fromCharCode(keyboard[i]);
-    const insertLineBreak = [97, 13, 47].indexOf(keyboard[i])!==-1;
+    const insertLineBreak = [" "].indexOf(keyboard[i])!==-1;
     if(insertLineBreak){
         keysBox.appendChild(document.createElement('br'));
     }
     else{ keysBox.appendChild(key);
     }
-    key.addEventListener('click',function(event){
-        console.log(event);
-    });
+    // key.addEventListener('click',function(event){
+    //     console.log(event);
+    // });
     
 
 
@@ -26,6 +26,9 @@ for(i=0; i<keyboard.length; i++){
 // let but = sel => document.querySelector(sel);
    
 };
+
+
+
 // const otherKey = [9, 13, 16, 32].indexOf(keyboard[i])!==-1;
 // switch(key){
 //     case '9': key.classList.remove('keyboard__key');
@@ -36,16 +39,31 @@ for(i=0; i<keyboard.length; i++){
 //     case '32': key.classList.add('keyboard__key--extra-wide');
 // }
 // let key = sel => document.querySelector(sel);
-console.log(document.querySelector(".k_9"));
+console.log('document.querySelector = '+ document.querySelector(".k_9"));
 // key('9').classList.add('keyboard__key--wide');
 
-let but = sel => document.getElementsByClassName(sel);
-console.log(but('k_9'));   
+
+board.appendChild(keysBox);
+document.body.appendChild(board);
+
+let key = sel => document.querySelector(sel);
+key('.k_9').classList.add('keyboard__key--wide');
+key('.k_9').innerHTML = ('tab');
+key('.k_92').classList.add('keyboard__key--wide');
+key('.k_92').innerHTML = ('backspace');
+key('.k_13').classList.add('keyboard__key--wide');
+key('.k_13').innerHTML = ('enter')
+key('.k_16').classList.add('keyboard__key--wide');
+key('.k_16').innerHTML = ('shift');
+key('.k_20').classList.add('keyboard__key--wide');
+key('.k_20').innerHTML = ('capslock');
+key('.k_32').classList.add('keyboard__key--extra-wide');
+key('.k_32').innerHTML = ('space');
 
 window.addEventListener('keydown',function(event){
     console.log(event);
     if(event.keyCode==keyboard[i]){
-    but(keyboard[i]).classList.toggle('keyboard__key--dark');
+    key('.k_[i]').classList.toggle('keyboard__key--dark');
     console.log(event);
     console.log(but(keyboard[i]))
     }
@@ -53,13 +71,12 @@ window.addEventListener('keydown',function(event){
 window.addEventListener('keyup',function(event){
     console.log(event);
     if(event.keyCode==keyboard[i]){
-    but(keyboard[i]).classList.toggle('keyboard__key--dark');
+    key('.k_[i]').classList.toggle('keyboard__key--dark');
     console.log(event);
     } 
 });
 
-board.appendChild(keysBox);
-document.body.appendChild(board);
+
 
 // console.log(document.querySelector('button'));
 // let but = sel => document.querySelector(sel);
