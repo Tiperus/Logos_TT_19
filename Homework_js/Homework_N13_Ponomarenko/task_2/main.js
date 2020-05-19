@@ -3,12 +3,12 @@ let board = document.createElement('div');
 board.classList.add('keyboard');
 let keysBox = document.createElement('div');
 keysBox.classList.add('keyboard__keys');
-let keyboard=[113, 119, 101, 114, 116, 121, 117, 105, 111, 112, 91, 93, 92, 97, 115, 100, 102, 103, 104, 106, 107, 108, 59, 39, 13, 122, 120, 99, 118, 98, 110, 109, 44, 46, 47];
+let keyboard=[9, 113, 119, 101, 114, 116, 121, 117, 105, 111, 112, 91, 93, 92, 97, 20,115, 100, 102, 103, 104, 106, 107, 108, 59, 39, 13, 16, 122, 120, 99, 118, 98, 110, 109, 44, 46, 47, 32];
+let i;
 
-
-for(let i=0; i<keyboard.length; i++){
+for(i=0; i<keyboard.length; i++){
     let key = document.createElement('button');
-    key.classList.add('keyboard__key');
+    key.classList.add('keyboard__key','k_'+keyboard[i], keyboard[i]);
     key.innerHTML=String.fromCharCode(keyboard[i]);
     const insertLineBreak = [97, 13, 47].indexOf(keyboard[i])!==-1;
     if(insertLineBreak){
@@ -16,27 +16,54 @@ for(let i=0; i<keyboard.length; i++){
     }
     else{ keysBox.appendChild(key);
     }
-    // key.addEventListener('click',function(event){
-    //     console.log(event);
-    // });
-    key.addEventListener('keydown',function(){
-        key.classList.toggle('keyboard__key--dark');
-        // console.log(event);
-    });
-    key.addEventListener('keyup',function(){
-        key.classList.toggle('keyboard__key--dark');
-        // console.log(event);
+    key.addEventListener('click',function(event){
+        console.log(event);
     });
     
-    
+
+
+// console.log(document.querySelector('.keyboard'));
+// let but = sel => document.querySelector(sel);
+   
 };
+// const otherKey = [9, 13, 16, 32].indexOf(keyboard[i])!==-1;
+// switch(key){
+//     case '9': key.classList.remove('keyboard__key');
+//               key.classList.add('keyboard__key--wide');
+
+//     case '13': key.classList.add('keyboard__key--wide');
+//     case '16': key.classList.add('keyboard__key--wide');
+//     case '32': key.classList.add('keyboard__key--extra-wide');
+// }
+// let key = sel => document.querySelector(sel);
+console.log(document.querySelector(".k_9"));
+// key('9').classList.add('keyboard__key--wide');
+
+let but = sel => document.getElementsByClassName(sel);
+console.log(but('k_9'));   
+
+window.addEventListener('keydown',function(event){
+    console.log(event);
+    if(event.keyCode==keyboard[i]){
+    but(keyboard[i]).classList.toggle('keyboard__key--dark');
+    console.log(event);
+    console.log(but(keyboard[i]))
+    }
+});
+window.addEventListener('keyup',function(event){
+    console.log(event);
+    if(event.keyCode==keyboard[i]){
+    but(keyboard[i]).classList.toggle('keyboard__key--dark');
+    console.log(event);
+    } 
+});
 
 board.appendChild(keysBox);
 document.body.appendChild(board);
 
-console.log(document.querySelector('button'));
-let but = sel => document.querySelector(sel);
-console.log(but('button'));
+// console.log(document.querySelector('button'));
+// let but = sel => document.querySelector(sel);
+// console.log(but('button'));
 
 // but('button').addEventListener('click',function(event){
 //     console.log(event);
