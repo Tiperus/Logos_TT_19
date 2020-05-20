@@ -20,7 +20,7 @@ color.addEventListener('click',function(){
         box.classList.add('box',color_arr[i]);
         let checkColor =true;
         box.addEventListener('mousedown',function(){
-            main.innerText='';
+            
             bod.className=('');
         
         });
@@ -63,7 +63,7 @@ picture.addEventListener('click',function(){
         box.classList.add('box',picture_arr[i]);
         
         box.addEventListener('mousedown',function(){
-            main.innerText='';
+            
             bod.className=('');
         });
         box.addEventListener('mouseup',function(){
