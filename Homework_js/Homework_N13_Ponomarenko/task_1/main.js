@@ -18,54 +18,38 @@ color.addEventListener('click',function(){
         for(let i=0; i<=8; i++){
         box=document.createElement('div');
         box.classList.add('box',color_arr[i]);
-        // box.style.backgroundColor=color_arr[i];
         let checkColor =true;
-        box.addEventListener('click',function(){
-        if(checkColor){
-            // bod.style.backgroundColor=color_arr[i];    
-            bod.classList.add(color_arr[i]);
-            checkColor =false;
-            }
-        else{
-            bod.classList.remove(color_arr[i]);
-            checkColor =true;}
-        });
-        main.appendChild(box);
-        }
+        box.addEventListener('mousedown',function(){
+        bod.className=('');
         
+        });
+        box.addEventListener('mouseup',function(){
+            bod.classList.add(color_arr[i]);
+        });
+           main.appendChild(box);
+        }
         document.body.appendChild(main);
         checkPictureColor=false;    
       } 
     else{
-        
-        // console.log(document.querySelectorAll('main'));
-        console.log(document.querySelector('.main'));
-       
+        main.innerText='';
+        bod.className=('');
+        let box=[];
         for(let i=0; i<=8; i++){
-            box.classList.remove(picture_arr[i]);
-            box.classList.add('box',color_arr[i]);
-            let checkColor =true;
-            box.addEventListener('click',function(){
-            if(checkColor){
-                bod.classList.remove(picture_arr[i]);   
-                bod.classList.add(color_arr[i]);
-                checkColor =false;
-                }
-            else{
-                bod.classList.remove(color_arr[i]);
-                checkColor =true;}
-            });
-            main.appendChild(box);
-            }
-
-
-
-        // checkPictureColor=true;
+        box=document.createElement('div');
+        box.classList.add('box',color_arr[i]);
+        let checkColor =true;
+        box.addEventListener('mousedown',function(){
+            bod.className=('');
+        });
+        box.addEventListener('mouseup',function(){
+            bod.classList.add(color_arr[i]);
+        });
+        main.appendChild(box);
+        }
+           checkPictureColor=false;
     }
-
     });
-
-
     checkPictureColor=true;
 picture.addEventListener('click',function(){
 
@@ -76,29 +60,36 @@ picture.addEventListener('click',function(){
         for(let i=0; i<=8; i++){
         box=document.createElement('div');
         box.classList.add('box',picture_arr[i]);
-        // box.style.backgroundColor=color_arr[i];
-        let checkPicture =true;
-        box.addEventListener('click',function(){
-        if(checkPicture){
-            // bod.style.backgroundColor=color_arr[i];    
+        
+        box.addEventListener('mousedown',function(){
+            bod.className=('');
+        });
+        box.addEventListener('mouseup',function(){
             bod.classList.add(picture_arr[i]);
-            checkPicture =false;
-            }
-        else{
-            bod.classList.remove(picture_arr[i]);
-            checkPicture =true;}
         });
         main.appendChild(box);
         }
         
         document.body.appendChild(main);
-        checkPictureColor=false;    
+           
       } 
     else{
-        bod.classList.remove(color_arr[i]);
-        bod.classList.remove(picture_arr[i]);
-
+        main.innerText='';
+        bod.style='';
+        let box=[];
+        for(let i=0; i<=8; i++){
+        box=document.createElement('div');
+        box.classList.add('box',picture_arr[i]);
+        
+        box.addEventListener('mousedown',function(){
+            bod.className=('');
+        });
+        box.addEventListener('mouseup',function(){
+            bod.classList.add(picture_arr[i]);
+        });
+        main.appendChild(box);
+        }
+        checkPictureColor=false;
     }
-
     });
  
