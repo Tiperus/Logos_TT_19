@@ -77,7 +77,7 @@ picture.addEventListener('click',function(){
       } 
     else{
         main.innerText='';
-        bod.style='';
+        bod.className=('');
         let box=[];
         for(let i=0; i<=8; i++){
         box=document.createElement('div');
