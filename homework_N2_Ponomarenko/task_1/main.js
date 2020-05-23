@@ -1,85 +1,162 @@
-let t1 = prompt("Який максимальний бал на тесті з 10 питань?");
-let o = 0;
-if (t1 == 10){  
-o = 0 + 1;}
+let topBox = document.querySelector('.top_box');
+// console.log(topBox)
+let buttonEdit=document.querySelector('.bt_edit');
+let buttonStyle=document.querySelector('.bt_style');
+let bottomBox=document.querySelector('.bottom_box');
+let bottomText=document.forms["bottom_box"].bottom_text;
+let fontSize = ['12px', '14px', '16px', '18px', '20px' ];
+let fontSizeClass=['font_size_0','font_size_1','font_size_2','font_size_3','font_size_4'];
+let fontFamily = [];
+let getSel = (sel) => document.querySelector(sel);
+let bottomBoxStyle;
 
-console.log(o);
+let checkButtonEdit =true;
+buttonEdit.addEventListener('click', function(){
+    if(checkButtonEdit){
+    
+        bottomText.value = topBox.innerHTML;
 
-let t2 = prompt("Який мінімальний вік студента?");
-let t = 0;
-if (t2 == 15){  
-t = 0 + 1;}
-console.log(t);
+        let bottomBoxButton=document.createElement('div');
+        bottomBoxButton.classList.add('bottom_box_button')
+    
+        let buttonAdd = document.createElement('button');
+        buttonAdd.setAttribute('type', 'button')
+        buttonAdd.innerText='add';
+        buttonAdd.classList.add('button_bottom--add');
+    
+        let buttonSave = document.createElement('button');
+        buttonSave.setAttribute('type', 'button')
+        buttonSave.innerText='save';
+        buttonSave.classList.add('button_bottom--save');
+    
+        bottomBoxButton.appendChild(buttonAdd);
+        bottomBoxButton.appendChild(buttonSave);
 
-let t3 = prompt("Який найнижчий бал допускається?");
-let th = 0;
-if (t3 >= 5){  
-th = 0 + 1;}
-console.log(th);
+        bottomBox.appendChild(bottomBoxButton);
 
-let t4 = prompt("Скільки Вам років?");
-let f = 0;
-if (t4 >= 15){  
-f = 0 + 1;}
-console.log(f);
+        // console.log(bottomText);
+        // console.log(bottomBoxButton);
+        // console.log(buttonSave);
+        // buttonSave.onclick = function(){
+        //     topBox.innerHTML = bottomText.value;
+        // }
+        buttonSave.addEventListener('click', function(){
+            topBox.innerHTML = bottomText.value;
+        });
 
-let t5 = prompt("Який бал Ви б хотіли отримати?");
-let fi = 0;
-if (t5 == 10){  
-fi = 0 + 1;}
-console.log(fi);
+        checkButtonEdit =false;
 
-let t6 = prompt("Який бал Ви очікуєте?");
-let si = 0;
-if (t6 >= 7){  
-si = 0 + 1;}
-console.log(si);
 
-let t7 = prompt("Задайте число в проміжку між 3 і 7"); 
-let se = 0;
-if (t7 < 3);  
-else if (t7 <= 7){
-se = 0 + 1;   
-}
-console.log(se);
+    }
+    else{
+        let bottomBoxButton = bottomText.nextElementSibling;
+        bottomText.setAttribute('class','bottom_text');
+        bottomBoxButton.setAttribute('class','bottom_box_button');
+        bottomBoxStyle.setAttribute('class','disabled');
 
-let t8 = prompt("Задайте натуральне число поза проміжком між 3 і 7"); 
-let ei = 0;
-if (t8 > 7){
-    ei = 0 + 1;   
+    }
+    });
+
+    
+
+
+
+
+
+
+    let checkButtonStyle =true;
+    buttonStyle.addEventListener('click', function(){
+    if(checkButtonStyle){
+        let bottomBoxButton = bottomText.nextElementSibling
+        bottomText.setAttribute('class','disabled');
+        bottomBoxButton.setAttribute('class','disabled');
+    
+        bottomBoxStyle = document.createElement('form');
+        bottomBoxStyle.setAttribute('class', 'bottom_text bottom_style');
+
+            bottomBoxStyleFontSize =document.createElement('div');
+            bottomBoxStyleFontSize.setAttribute('class', 'bottom_style_box_fontsize');
+
+            bottomBoxStyleFontSizeTitle =document.createElement('h4');
+            bottomBoxStyleFontSizeTitle.setAttribute('class','font_size_box_title')
+            bottomBoxStyleFontSizeTitle.innerText='Font Size:';
+
+            bottomBoxStyleFontSizeBoxButton =document.createElement('div');
+            bottomBoxStyleFontSizeBoxButton.setAttribute('class', 'font_size_box_span');
+            for(let i=0; i<5; i++){
+            bottomBoxStyleFontSizeSpanButton=document.createElement('span');
+            bottomBoxStyleFontSizeSpanButton.setAttribute('class','font_size_box_span--span' )
+
+            bottomBoxStyleFontSizeSpanButton.innerHTML = `<input type="radio" name="fs" id="check`+[i]+`" style="margin-right: 5px"><label for="check'`+[i]+`" style="margin-right: 10px">`+fontSize[i]+`</label>`;
+            bottomBoxStyleFontSizeBoxButton.appendChild(bottomBoxStyleFontSizeSpanButton);
+
+            }
+            bottomBoxStyle.appendChild(bottomBoxStyleFontSizeTitle);
+            bottomBoxStyle.appendChild(bottomBoxStyleFontSizeBoxButton);
+            
+            // ________________________________________________
+            
+            bottomBoxStyleFontFamilyTitle =document.createElement('h4');
+            bottomBoxStyleFontFamilyTitle.setAttribute('class','font_family_box_title');
+            bottomBoxStyleFontFamilyTitle.innerText='Font Family:';
+
+            bottomBoxStyleFontFamilySelect =document.createElement('select');
+            bottomBoxStyleFontFamilySelect.setAttribute('class', 'bottom_style_box_font_family-select');
+            for(let i=0; i<5; i++){
+                bottomBoxStyleFontFamilySelect.innerHTML = `<option name="selectOption" value="option`+[i]+` id="check`+[i]+`">`+fontFamily[i]+`</option>`;
+                // bottomBoxStyleFontFamilySelect.appendChild() 
+            }
+           
+
+
+
+            
+
+            bottomBoxStyle.appendChild(bottomBoxStyleFontFamilyTitle);
+            bottomBoxStyle.appendChild(bottomBoxStyleFontFamilySelect)
+
+
+            bottomBox.appendChild(bottomBoxStyle);
+
+            for(let i=0; i<5; i++){
+                bottomBoxStyleFontSizeRadioButton = document.querySelector('#check'+[i]);
+                // console.log(bottomBoxStyleFontSizeRadioButton)
+                bottomBoxStyleFontSizeRadioButton.addEventListener('change',function(){
+                    
+                    
+                    let arrTopBoxClassList =topBox.className.split(' ')
+                    arrTopBoxClassList.forEach((TopBoxClass,i,arrTopBoxClassList)=>{
+                        
+                        if(fontSizeClass.forEach)((fSC,x,fontSizeClass)=>{TopBoxClass[i]==fSC[x]});{
+                        
+                            topBox.classList.remove('font_size_'+[i]+'')
+                        }
+                    });
+                    
+                    console.log(i)
+                    console.log(arrTopBoxClassList)
+                    
+                    topBox.classList.add('font_size_'+[i]);
+                });
+            }
+                
+
+
+
+            // bottomBoxStyleFontSizeSpanButtonFirst = document.querySelector('#check0');
+            // console.log(bottomBoxStyleFontSizeSpanButtonFirst);
+            // bottomBoxStyleFontSizeSpanButtonFirst.setAttribute('checked');
+    
+
+        checkButtonStyle =false;
+        checkButtonEdit =false;
+    }
+    else{
+        let bottomBoxButton = bottomText.nextElementSibling
+        bottomText.setAttribute('class','disabled');
+        bottomBoxButton.setAttribute('class','disabled');
+        bottomBoxStyle.setAttribute('class','bottom_text bottom_style');
     }  
-else if (t8 <1);
-else if (t8 <3)
-{
-ei = 0 + 1;   
-}
-console.log(ei);
 
 
-let t9 = prompt("Якого року Ви народились?");
-let n = 0;
-if (t9 <= 1940){
-    alert("Ви привид?");   
-}
-else if (t9 <= 2004){  
-n = 0 + 1;}
-console.log(n);
-
-let t10 = prompt("Як Ви думаєте скільки пунктів Ви отримаєте?");
-let te = 0;
-if (t10 <= 5){  
-te = 0 + 1;}
-console.log(te);
-
-let sum = (o+t+th+f+fi+si+se+ei+n+te);
-console.log(sum);
-
-if (sum == 10){
-    alert("SUPER!!!");
-}
-else if(sum >= 7){
-    alert("Ви молодець!");
-}
-else if(sum < 7){
-    alert("Слабо!");
-}
+    });

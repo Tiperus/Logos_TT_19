@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    height: 100vh;
+    width: 70%;
+    background-color: rgb(219, 216, 216);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+}
+.top_box{
+    height: 38%;
+    width: 95%;
+    background-color: snow;
+    padding: 2%;
+    overflow-y: auto;
+    
+
+}
+.midle_box_buttom{
+    height: 10%;
+    width: 30%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5px auto 5px auto ;
+}
+
+
+.bt_edit{
+    height:40px;
+    width: 100px;
+    background-color: yellow;
+}
+.bt_style{
+    height:40px;
+    width: 100px;
+    background-color: steelblue;
+}
+.bottom_box{
+    height: 45%;
+    width: 95%;
+    background-color: silver;
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+
+}
+.bottom_text{
+    height: 75%;
+    width: 100%;
+    background-color: snow;
+    overflow-y: auto;
+}
+.disabled{
+    display: none;
+}
+.bottom_box_button{
+    height: 17%;
+    width: 30%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+    
+}
+.button_bottom--add{
+    height:40px;
+    width: 100px;
+    background-color: tomato;
+}
+.button_bottom--save{
+    height:40px;
+    width: 100px;
+    background-color: yellowgreen;
+}
+
+.bottom_style{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+.bottom_style_box_fontsize{
+    display: flex;
+    flex-direction: column;
+}
+.font_size_box_title{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.bottom_style_box_font_family-select{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: fit-content;
+    background-color: tomato;
+}
+.font_family_box_title{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.font_size_0{
+    font-size: 12px;
+}
+.font_size_1{
+    font-size: 14px;
+}
+.font_size_2{
+    font-size: 16px;
+}
+.font_size_3{
+    font-size: 18px;
+}
+.font_size_4{
+    font-size: 20px;
+}
