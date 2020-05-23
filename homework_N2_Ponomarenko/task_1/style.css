@@ -94,6 +94,8 @@ body{
     display: flex;
     flex-direction: column;
     padding: 5px;
+    height: 98%;
+
 }
 .bottom_style_box_fontsize{
     display: flex;
@@ -108,10 +110,32 @@ body{
     flex-direction: column;
     height: fit-content;
     width: fit-content;
-    background-color: tomato;
+    background-color: rgba(77, 154, 255, 0.123);
+    font-size: 14;
 }
 .font_family_box_title{
     font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+}
+.colors_box_title{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+}
+.bottom_box_style_color_box_button-btncolortext{
+    height:40px;
+    width: 100px;
+    background-color: thistle;
+    margin-left: 5px;
+}
+.bottom_box_style_color_box_button-btncolorbackground{
+    height:40px;
+    width: 120px;
+    background-color: thistle;
+    margin-left: 5px;
+}
+.font_style_box_title{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
 }
 
 
@@ -130,4 +154,20 @@ body{
 }
 .font_size_4{
     font-size: 20px;
+}
+
+.font_family_0{
+    font-family: 'Times New Roman', Times, serif;
+}
+.font_family_1{
+    font-family: cursive;
+}
+.font_family_2{
+    font-family: fantasy;
+}
+.font_family_3{
+    font-family: monospace;
+}
+.font_family_4{
+    font-family: sans-serif;
 }
