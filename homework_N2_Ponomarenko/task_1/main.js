@@ -142,6 +142,19 @@ buttonEdit.addEventListener('click', function(){
             bottomBoxStyle.appendChild(bottomBoxStyleFontStyleTitle)
             bottomBoxStyle.appendChild(bottomBoxStyleFontStyleBoxCheckBox)
 
+            let bottomBoxStyleColorBoxChoiseBox =document.createElement('div');
+            bottomBoxStyleColorBoxChoiseBox.setAttribute('class', 'disabled')
+            for(let i=0; i<9; i++){
+                bottomBoxStyleColorBoxChoiseBoxColor =document.createElement('div');
+                bottomBoxStyleColorBoxChoiseBoxColor.setAttribute('class', 'bottom_box_style_color_box_choise_box_color');
+                bottomBoxStyleColorBoxChoiseBoxColor.classList.add(`background_color_`+[i]+``, `text_color_`+[i]+``)
+                bottomBoxStyleColorBoxChoiseBox.appendChild(bottomBoxStyleColorBoxChoiseBoxColor);
+            }
+
+            bottomBoxStyle.appendChild(bottomBoxStyleColorBoxChoiseBox);
+
+            
+
 
             bottomBox.appendChild(bottomBoxStyle);
             // ________________________________________________textSizeButton
@@ -172,11 +185,10 @@ buttonEdit.addEventListener('click', function(){
             bottomBoxStyleFontFamilySelect.addEventListener('change',function(){
                 let arrTopBoxClassList =topBox.className.split(' ')
                     arrTopBoxClassList.forEach(key =>{
-                    const fontSizeClass = ['font_family_0','font_family_1','font_family_2','font_family_3','font_family_4'].indexOf(key)!==-1;
-                    if(fontSizeClass){
+                    const fontFamilyClass = ['font_family_0','font_family_1','font_family_2','font_family_3','font_family_4'].indexOf(key)!==-1;
+                    if(fontFamilyClass){
                         topBox.classList.remove(key)
                         // console.log(key)
-                        
                     }
                     });
                   topBox.classList.add(this.value);
@@ -185,19 +197,89 @@ buttonEdit.addEventListener('click', function(){
 
         // _______________________________________________ColorButton
             
+        let toggleColorTextColorBackground;
         bottomBoxStyleColorBoxButtonBtnColorText =document.querySelector('.bottom_box_style_color_box_button-btncolortext');
-        console.log( bottomBoxStyleColorBoxButtonBtnColorText);
+        // console.log( bottomBoxStyleColorBoxButtonBtnColorText);
         bottomBoxStyleColorBoxButtonBtnColorText.addEventListener('click',function(){
+            toggleColorTextColorBackground=true;
+            if(toggleColorTextColorBackground===true){
+            bottomBoxStyleColorBoxChoiseBox.setAttribute('class', 'bottom_box_style_color_box_choise_box');
+            for(let i=0; i<9; i++){
+            bottomBoxStyleColorBoxChoiseBoxColor=document.querySelector(`.text_color_`+[i]+``)
+            // console.log(bottomBoxStyleColorBoxChoiseBoxColor)
+                bottomBoxStyleColorBoxChoiseBoxColor.addEventListener('click', function(){
+                    if(toggleColorTextColorBackground===true){
+                        let arrTopBoxClassList =topBox.className.split(' ')
+                        arrTopBoxClassList.forEach(key =>{
+                        const textColorClass = ['text_color_0','text_color_1','text_color_2','text_color_3','text_color_4', 'text_color_5', 'text_color_6', 'text_color_7', 'text_color_8'].indexOf(key)!==-1;
+                        if(textColorClass){
+                            topBox.classList.remove(key)
+                            // console.log(key)
+                            }
+                        });
 
+                        topBox.classList.add('text_color_'+[i]);
+                    }
+                });
             
-
+            }
+            
+            }
+            
+            
         });
+
+        bottomBoxStyleColorBoxButtonBtnColorBackground =document.querySelector('.bottom_box_style_color_box_button-btncolorbackground')
+        console.log(bottomBoxStyleColorBoxButtonBtnColorBackground);
+        bottomBoxStyleColorBoxButtonBtnColorBackground.addEventListener('click', function(){
+            toggleColorTextColorBackground=false;
+            if(toggleColorTextColorBackground===false){
+                bottomBoxStyleColorBoxChoiseBox.setAttribute('class', 'bottom_box_style_color_box_choise_box');
+                for(let i=0; i<9; i++){
+                bottomBoxStyleColorBoxChoiseBoxColor=document.querySelector(`.text_color_`+[i]+``)
+                // console.log(bottomBoxStyleColorBoxChoiseBoxColor)
+                bottomBoxStyleColorBoxChoiseBoxColor.addEventListener('click', function(){
+                    if(toggleColorTextColorBackground===false){
+                        let arrTopBoxClassList =topBox.className.split(' ')
+                        arrTopBoxClassList.forEach(key =>{
+                        const backgroundColorClass = ['background_color_0','background_color_1','background_color_2','background_color_3','background_color_4', 'background_color_5', 'background_color_6', 'background_color_7', 'background_color_8'].indexOf(key)!==-1;
+                        if(backgroundColorClass){
+                            topBox.classList.remove(key)
+                            // console.log(key)
+                            }
+                        });
+    
+                        topBox.classList.add('background_color_'+[i]);
+                    }
+                    });
                 
+                }
+                
+                }
+                
+        });
+        // ____________________________________checkbox_bold_italic
+
+        bottomBoxStyleFontStyleBoxCheckBoxBold =document.querySelector('#checkStyle0');
+        // console.log(bottomBoxStyleFontStyleBoxCheckBoxBold);
+        
+        bottomBoxStyleFontStyleBoxCheckBoxBold.addEventListener('change',function(){
+            if(bottomBoxStyleFontStyleBoxCheckBoxBold.checked)topBox.classList.add('bold');
+            else topBox.classList.remove('bold')
+        });
+        
+        bottomBoxStyleFontStyleBoxCheckBoxItalic =document.querySelector('#checkStyle1');
+        // console.log(bottomBoxStyleFontStyleBoxCheckBoxItalic);
+        
+        bottomBoxStyleFontStyleBoxCheckBoxItalic.addEventListener('change',function(){
+            if(bottomBoxStyleFontStyleBoxCheckBoxItalic.checked)topBox.classList.add('italic');
+            else topBox.classList.remove('italic')
+        });
 
 
-            // bottomBoxStyleFontSizeSpanButtonFirst = document.querySelector('#check2');
+            // bottomBoxStyleFontSizeSpanButtontThird = document.querySelector('#check2');
             // console.log(bottomBoxStyleFontSizeSpanButtonFirst);
-            // bottomBoxStyleFontSizeSpanButtonFirst.setAttribute('check','checked');
+            // bottomBoxStyleFontSizeSpanButtonThird.setAttribute('check','checked');
     
 
         checkButtonStyle =false;

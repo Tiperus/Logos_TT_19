@@ -95,6 +95,7 @@ body{
     flex-direction: column;
     padding: 5px;
     height: 98%;
+    position: relative;
 
 }
 .bottom_style_box_fontsize{
@@ -137,6 +138,21 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 10px;
 }
+.bottom_box_style_color_box_choise_box{
+    position: absolute;
+    right: 10px;
+    bottom: 1%;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.bottom_box_style_color_box_choise_box_color{
+    width: 28%;
+    height: 28%;
+    box-shadow: darkgray 5px 5px 5px;
+}
 
 
 
@@ -170,4 +186,66 @@ body{
 }
 .font_family_4{
     font-family: sans-serif;
+}
+
+.text_color_0{
+    color: lime; 
+}
+.text_color_1{
+    color: yellow; 
+}
+.text_color_2{
+    color: yellowgreen; 
+}
+.text_color_3{
+    color: green; 
+}
+.text_color_4{
+    color: orange; 
+}
+.text_color_5{
+    color: orangered; 
+}
+.text_color_6{
+    color: blue; 
+}
+.text_color_7{
+    color: blueviolet; 
+}
+.text_color_8{
+    color: navy; 
+}
+.background_color_0{
+    background-color: lime; 
+}
+.background_color_1{
+    background-color: yellow; 
+}
+.background_color_2{
+    background-color: yellowgreen; 
+}
+.background_color_3{
+    background-color: green; 
+}
+.background_color_4{
+    background-color: orange; 
+}
+.background_color_5{
+    background-color: orangered; 
+}
+.background_color_6{
+    background-color: blue; 
+}
+.background_color_7{
+    background-color: blueviolet; 
+}
+.background_color_8{
+    background-color: navy; 
+}
+
+.bold{
+    font-weight: bold;
+}
+.italic{
+    font-style: italic;
 }
