@@ -1,0 +1,37 @@
+body{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+form{
+    width: 80%;
+    height: 50vh;
+    background-color: rgb(219, 229, 248);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10%;
+
+}
+h2{
+    width: 90%;
+}
+[type="button"]{
+    background-color: cadetblue;
+    width: 100px;
+    height: 30px;
+    /* margin-left: 50px;
+    margin-right: 50px; */
+}
+[name="text"]{
+    width: 40%;
+
+}
+[name="taget"]{
+    width: 40%;
+}
+[name="placeholder"]{
+    width: 40%;
+    margin-bottom: 5%;
+}
