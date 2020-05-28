@@ -1,0 +1,213 @@
+@font-face{
+    font-family: My;
+    src: url(axaxax/axaxax\ bd.ttf);
+}
+.main{
+position: absolute;
+top: 50%;
+left:50%;
+transform: translate(-50%, -50%);
+width: 80%;
+height: 70vh;
+background-color: black;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+padding: 3%;
+border-radius: 30px;
+}
+.main_clock{
+    width: 90%;
+    height: 28%;
+    background-color: rgb(77, 72, 72);
+    font-family: My;
+    font-size: 40px;
+    color: lime;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+
+}
+.clock_numb{
+    margin: 0 auto 0 33%;
+    font-size: 70px;
+
+}
+.calendar{
+    width: 90%;
+    height: 22%;
+    background-color: rgb(77, 72, 72);
+    font-family: My;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seconds_box{
+    width: 90%;
+    height: 20%;
+    background-color: rgb(77, 72, 72);
+    font-family: My;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+.seconds{
+    width: 100%;
+    height: 5vh;
+    font-family: My;
+    font-size: 16px;
+    letter-spacing: 5px;
+    background-color: transparent;
+    color: lime;
+    margin: 2px auto 2px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+    
+
+}
+.fotter{
+    width: 90%;
+    height: 20%;
+    background-color: rgb(77, 72, 72);
+    font-family: My;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    position: relative;
+}
+
+[type="button"]{
+    background-color: transparent;
+    border: 2px solid lime;
+    color: lime;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+/* .seconds_span{
+    max-width: 30px;
+    margin: 2px auto 2px auto;
+
+} */
+.memory{
+    width: 200px;
+    height: 100%;
+    background-color: rgba(255, 99, 71, 0.315);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 16px;
+    color: rgb(4, 255, 4);
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.timer{
+    width: 200px;
+    height: 100%;
+    background-color: rgba(255, 99, 71, 0.315);
+    position: absolute;
+    bottom: -39px;
+    left: 0;
+    /* font-size: 16px;
+    color: lime; */
+    padding-left: 60px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; 
+    border-bottom-left-radius: 25px;
+}
+.timer_number{
+    height: 100%;
+    max-width: 30%;
+    width: 30%;
+    font-size: 40px;
+    color: lime;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#time_number_btn_incr{
+    font-size: 25px;
+    width: 50px;
+    height: 50%;
+    border: 0px;
+    margin-left: 10%;
+}
+#time_number_btn_decr{
+    font-size: 25px;
+    width: 50px;
+    height: 50%;
+    border: 0px;
+    margin-left: 10%;
+}
+i{
+    color: lime;
+}
+.timer_display{
+    width: 200px;
+    height: 100%;
+    background-color: rgba(255, 99, 71, 0.315);
+    position: absolute;
+    bottom: -39px;
+    right: 0;
+    
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap;  */
+    border-bottom-right-radius: 25px;
+}
+.timer_display_number{
+    height: 100%;
+    max-width: 100px;
+    width: 40%;
+    font-size: 40px;
+    color: lime;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* background-color: lime; */
+}
+.timer_display_number_separ{
+    max-width: 5px;
+    
+    height: 100%;
+    font-size: 40px;
+    color: lime;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.timer_display_seconds{
+    max-width: 100px;
+    width: 40%;
+    height: 100%;
+    font-size: 40px;
+    color: lime;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* background-color: lime; */
+}
