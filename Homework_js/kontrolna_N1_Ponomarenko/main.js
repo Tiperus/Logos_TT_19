@@ -169,6 +169,12 @@ let buttonAdd =getSel('#bt_add')
                       tbl.appendChild(tbl_body);
                       temporaryDiv.appendChild(tbl);
                       bottomText.value += temporaryDiv.innerHTML;
+                      inputTR.value='';
+                      inputTD.value='';
+                      inputWidthTD.value='';
+                      inputHeightTD.value='';
+                      inputWidthBorder.value='';
+
         
             });
 
@@ -245,6 +251,7 @@ let buttonAdd =getSel('#bt_add')
                     temporaryDivList.appendChild(list);
 
                     bottomText.value += temporaryDivList.innerHTML;
+                    inputListCount.value='';
             
                 });
 
@@ -352,7 +359,8 @@ if(checkButtonStyle){
     let bottomBoxStyleColorBoxChoiseBox =document.createElement('div');
     bottomBoxStyleColorBoxChoiseBox.setAttribute('class', 'disabled')
     for(let i=0; i<9; i++){
-        bottomBoxStyleColorBoxChoiseBoxColor =document.createElement('div');
+        bottomBoxStyleColorBoxChoiseBoxColor =document.createElement('button');
+        bottomBoxStyleColorBoxChoiseBoxColor.setAttribute('type', 'button')
         bottomBoxStyleColorBoxChoiseBoxColor.setAttribute('class', 'bottom_box_style_color_box_choise_box_color');
         bottomBoxStyleColorBoxChoiseBoxColor.classList.add(`background_color_`+[i]+``, `text_color_`+[i]+``)
         bottomBoxStyleColorBoxChoiseBox.appendChild(bottomBoxStyleColorBoxChoiseBoxColor);
