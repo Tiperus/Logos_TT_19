@@ -73,7 +73,9 @@ setInterval(function(){
     clear.addEventListener('click', function(){
         windowMemory1.innerText='';
         windowMemory2.innerText='';
-        seconds.innerHTML='';
+        seconds.innerText='';
+        sec = 0;
+        min = 0;
         clearInterval(myTime);
     });
 
