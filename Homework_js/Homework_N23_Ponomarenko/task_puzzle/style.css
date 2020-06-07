@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#spring{
+    position: absolute;
+    top: 10%;
+    left: 100px;
+    width: 400px;
+    height: 400px;
+    background-color: beige;
+    display: flex;
+    flex-flow: row wrap;
+    /* background-image: url(nicolas-j-leclercq-b47haDE5mGo-unsplash.jpg); */
+}
+.part{
+    width: 100px;
+    height: 100px;
+    /* background-color: blue; */
+    border: 1px solid #000;
+
+
+}
+.target{
+    position: absolute;
+    top: 10%;
+    left: 700px;
+    width: 400px;
+    height: 400px;
+    background-color: transparent;
+    border: 1px solid #000;
+    display: flex;
+    flex-flow: row wrap;
+
+}
+
+#box1{
+    background-image: url(nicolas-j-leclercq-b47haDE5mGo-unsplash.jpg);
+    background-position: 0 0;
+    
+}
+#box2{
+    background-image: url(nicolas-j-leclercq-b47haDE5mGo-unsplash.jpg);
+    background-position: 100px 0px;
+    
+}
+#box3{
+    background-image: url(nicolas-j-leclercq-b47haDE5mGo-unsplash.jpg);
+    background-position: 200px 0px;
+    
+}
+#box4{
+    background-image: url(nicolas-j-leclercq-b47haDE5mGo-unsplash.jpg);
+    background-position: 300px 0px;
+    
+}
+#box5{
+    background-image: url(nicolas-j-leclercq-b47haDE5mGo-unsplash.jpg);
+    background-position: 0px 100px;
+    
+}
+#box6{
+    background-image: url(nicolas-j-leclercq-b47haDE5mGo-unsplash.jpg);
+    background-position: 100px 100px;
+    
+}
+#box7{
+    background-image: url(nicolas-j-leclercq-b47haDE5mGo-unsplash.jpg);
+    background-position: 200px 100px;
+    
+}
+#box8{
+    background-image: url(nicolas-j-leclercq-b47haDE5mGo-unsplash.jpg);
+    background-position: 300px 100px;
+    
+}
+#box9{
+    background-image: url(nicolas-j-leclercq-b47haDE5mGo-unsplash.jpg);
+    background-position: 0px 200px;
+    
+}
+#box10{
+    background-image: url(nicolas-j-leclercq-b47haDE5mGo-unsplash.jpg);
+    background-position: 100px 200px;
+    
+}
+#box11{
+    background-image: url(nicolas-j-leclercq-b47haDE5mGo-unsplash.jpg);
+    background-position: 200px 200px;
+    
+}
+#box12{
+    background-image: url(nicolas-j-leclercq-b47haDE5mGo-unsplash.jpg);
+    background-position: 300px 200px;
+    
+}
+#box13{
+    background-image: url(nicolas-j-leclercq-b47haDE5mGo-unsplash.jpg);
+    background-position: 0px 300px;
+    
+}
+#box14{
+    background-image: url(nicolas-j-leclercq-b47haDE5mGo-unsplash.jpg);
+    background-position: 100px 300px;
+    
+}
+#box15{
+    background-image: url(nicolas-j-leclercq-b47haDE5mGo-unsplash.jpg);
+    background-position: 200px 300px;
+    
+}
+#box16{
+    background-image: url(nicolas-j-leclercq-b47haDE5mGo-unsplash.jpg);
+    background-position: 300px 300px;
+    
+}
