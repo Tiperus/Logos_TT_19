@@ -6,7 +6,7 @@ let leftBorder;
 let bottomBorder;
 let borderRad;
 
-let myInteval=setInterval(myRandom,2052)
+let myInteval=setInterval(myRandom,1054)
 
 function myRandom(){
     random=((Math.random()*100).toFixed());
@@ -42,10 +42,8 @@ function myRandom(){
         borderRadius: borderRad+'%',
         backgroundColor: color[coloreVar],
         borderWidth: random5+'px',
-        borderColor: coloreVarBord,},2000,"swing").removeClass( `border_`+random7+``, 1000).removeClass( `shadow_`+random6+``, 1000).animate({},2000)
+        borderColor: coloreVarBord,},2000,"swing").removeClass( `border_`+random7+``, 100).removeClass( `shadow_`+random6+``, 100)
     // I know about ,"easeInElastic" but it works worse
-
-
 };
 
 

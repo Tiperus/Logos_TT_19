@@ -32,7 +32,7 @@ $('.ball').on('click', function(){
         height: ((Math.random()*100+100).toFixed())+'px',
         borderRadius: borderRad+'%',
         backgroundColor: color[coloreVar]
-    },2000)
+    },2000,"swing")
 
 })
 

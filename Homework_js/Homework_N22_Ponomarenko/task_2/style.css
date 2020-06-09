@@ -57,10 +57,10 @@
     box-shadow: -15px -15px -15px rgb(170, 37, 37);
 }
 .shadow_3{
-    box-shadow: -15px 20px 20px rgb(46, 90, 65);
+    box-shadow: -15px 20px -20px rgb(191, 209, 87);
 }
 .shadow_4{
-    box-shadow: 1px 10px 10px rgb(122, 19, 105);
+    box-shadow: 1px -10px 10px rgb(122, 19, 105);
 }
 .shadow_5{
     box-shadow: 5px 5px -15px rgb(141, 170, 37);
