@@ -6,7 +6,7 @@ let leftBorder;
 let bottomBorder;
 let borderRad;
 
-let myInteval=setInterval(myRandom,8000)
+let myInteval=setInterval(myRandom,2000)
 
 function myRandom(){
     random=((Math.random()*100).toFixed());
@@ -50,7 +50,7 @@ function myRandom(){
 
 
 
-    },4000)
+    },2000)
     
         console.log(type),
         console.log(coloreVarBord)
