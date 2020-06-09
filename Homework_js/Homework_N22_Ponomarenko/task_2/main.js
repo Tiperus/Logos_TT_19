@@ -1,12 +1,12 @@
 
 let color=['navy', 'blue', 'maroon', 'lime',  'teal', 'black', 'green', 'olive', 'yellow', 'red'];
-let typeBorder=['solid', 'dashed', 'dotted', 'double', 'groove', 'inset', 'outset', 'ridge', 'dotted', 'double']
+
 let coloreVar;
 let leftBorder;
 let bottomBorder;
 let borderRad;
 
-let myInteval=setInterval(myRandom,2000)
+let myInteval=setInterval(myRandom,2052)
 
 function myRandom(){
     random=((Math.random()*100).toFixed());
@@ -23,7 +23,7 @@ function myRandom(){
     if(random2>=85)bottomBorder=+random2-30;
     else if(random2<=15) bottomBorder=+random2+20;
     else bottomBorder=random2
-    // console.log(bottomBorder)
+ 
 
     random4=((Math.random()*10).toFixed());
     coloreVar=random4;   
@@ -32,9 +32,9 @@ function myRandom(){
     random6=((Math.random()*10).toFixed());
     random7=((Math.random()*10).toFixed());
     random8=((Math.random()*10).toFixed());
-    let type= typeBorder[random6];
+    
     let coloreVarBord=color[random7];
-        $('.ball').animate({
+        $('.ball').addClass( `border_`+random7+``, 1000).addClass( `shadow_`+random6+``, 1000).animate({
         left: leftBorder+'%',
         top: bottomBorder+'%',
         width: ((Math.random()*100+100).toFixed())+'px',
@@ -42,20 +42,12 @@ function myRandom(){
         borderRadius: borderRad+'%',
         backgroundColor: color[coloreVar],
         borderWidth: random5+'px',
-        borderStyle: type,
-        borderColor: coloreVarBord,
-        // boxShadow: random8,
-        boxShadow: coloreVarBord,
-        // boxShadow: random7, 
+        borderColor: coloreVarBord,},2000,"swing").removeClass( `border_`+random7+``, 1000).removeClass( `shadow_`+random6+``, 1000).animate({},2000)
+    // I know about ,"easeInElastic" but it works worse
 
-
-
-    },2000)
-    
-        console.log(type),
-        console.log(coloreVarBord)
 
 };
+
 
 $('.ball').on('click',function(e){
     clearInterval(myInteval)

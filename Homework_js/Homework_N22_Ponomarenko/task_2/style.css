@@ -19,3 +19,64 @@
     box-shadow: 10px 10px 10px rgb(37, 170, 55);
 }
 
+
+.border_1{
+    border-style: solid;
+}
+.border_2{
+    border-style: dashed;
+}
+.border_3{
+    border-style: dotted;
+}
+.border_4{
+    border-style: double;
+}
+.border_5{
+    border-style: groove;
+}
+.border_6{
+    border-style: inset;
+}
+.border_7{
+    border-style: outset;
+}
+.border_8{
+    border-style: dotted;
+}
+.border_9{
+    border-style: ridge;
+}
+.border_10{
+    border-style: dotted;
+}
+.shadow_1{
+    box-shadow: 15px 15px 15px rgb(37, 73, 170);
+}
+.shadow_2{
+    box-shadow: -15px -15px -15px rgb(170, 37, 37);
+}
+.shadow_3{
+    box-shadow: -15px 20px 20px rgb(46, 90, 65);
+}
+.shadow_4{
+    box-shadow: 1px 10px 10px rgb(122, 19, 105);
+}
+.shadow_5{
+    box-shadow: 5px 5px -15px rgb(141, 170, 37);
+}
+.shadow_6{
+    box-shadow: 15px 15px 15px rgb(170, 37, 66);
+}
+.shadow_7{
+    box-shadow: 30px -30px 30px rgb(124, 126, 226);
+}
+.shadow_8{
+    box-shadow: 10px -15px -15px rgb(170, 90, 37);
+}
+.shadow_9{
+    box-shadow: -5px 15px 30px rgb(37, 170, 92);
+}
+.shadow_10{
+    box-shadow: -25px 15px -25px rgb(37, 73, 170);
+}
