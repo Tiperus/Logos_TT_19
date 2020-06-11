@@ -8,7 +8,7 @@ $(function(){
         // counter_clockwise: true,
         // starting_position: 30
 
-    }).circularProgress('animate', 100, 4000)
+    }).circularProgress('animate', 79, 4000)
     
 
 })
